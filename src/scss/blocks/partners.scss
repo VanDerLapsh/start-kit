@@ -1,0 +1,40 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+  background-color: $main-color-dark;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $second-color-light;
+
+    @media (min-width: $screen-md) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  &__title:after {
+    content: '';
+    width: 80px;
+    border: 2px solid $third-color;
+    align-self: center;
+    margin-top: 5px;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__icon  {
+    margin: 0 20px;
+  }
+}
+

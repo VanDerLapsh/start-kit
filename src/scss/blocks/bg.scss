@@ -1,0 +1,14 @@
+.bg {
+  background-image: url(/img/bg-sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: $screen-md) {
+    background-image: url(/img/bg-md.jpg);
+  }
+
+  @media (min-width: $screen-lg) {
+    background-image: url(/img/bg-lg.jpg);
+  }
+}

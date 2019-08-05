@@ -1,0 +1,76 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+  position: relative;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__toggle {
+    width: 40px;
+    height: 40px;
+
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__logo img {
+    height: 60px;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 14px;
+    color: $main-color;
+    transition: all .2s;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $third-color;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+    }
+
+    & span {
+      padding-left: 4px;
+      padding-bottom: 1px;
+      border-bottom: 2px dotted $third-color;
+      transition: all .3s;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
+
+

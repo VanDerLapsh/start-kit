@@ -1,0 +1,75 @@
+.our-plus {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: $main-color-dark;
+
+  &__box-wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: -40px;
+
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 40px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    max-width: 280px;
+    background: $main-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 5px 20px;
+    padding: 30px 45px;
+    align-items: center;
+
+    @media (min-width: $screen-md) {
+      padding: 32px 10px 35px 20px;
+      margin: 0 7px;
+    }
+  }
+
+  &__descr {
+    padding-left: 40px;
+    font-size: 13px;
+    line-height: 17px;
+
+    color: $second-color-light;
+
+    @media (min-width: $screen-md) {
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__text {
+    padding: 350px 30px 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      padding: 150px 110px 80px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 150px 300px 70px;
+    }
+  }
+
+  &__text span {
+    color: $third-color;
+  }
+}

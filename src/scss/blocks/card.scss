@@ -1,0 +1,53 @@
+.card {
+  max-width: 280px;
+  margin: 0 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  background: $main-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 30px;
+  }
+
+  &__img img {
+    width: 100%;
+  }
+
+  &__title {
+    padding: 20px 20px 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $second-color-light;
+
+    @media (min-width: $screen-md) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    padding-right: 20px;
+    color: $third-color;
+  }
+
+  &__li {
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 17px;
+    color: $second-color;
+
+    @media (min-width: $screen-md) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

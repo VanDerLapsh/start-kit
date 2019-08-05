@@ -9,7 +9,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.scss": "stylelint --syntax=scss"
+    "": "stylelint --syntax=scss"
   },
   "author": "VanDerLapsh",
   "license": "MIT",

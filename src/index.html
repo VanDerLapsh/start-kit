@@ -3,16 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Документ</title>
+  <title>Агентство недвижимости "Метро"</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
   <script src="picturefill.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody()</script>
+  <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=28e85484-6270-40f8-a038-bf4958e91b0c&load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
 <body>
+
+  <div class="bg">
+    <div class="inner">
+      <header class="page-header">
+        <button class="page-header__toggle  burger"><span>Показать главное меню</span></button>
+        <a href="#" class="page-header__logo logo"><img src="img/logo.png" alt="logo"></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#services" class="main-nav__link">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#partners" class="main-nav__link">Партнеры</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:88129825695" class="page-header__phone">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite.svg#icon_phone"></use>
+          </svg><span>+7 812 982-56-95</span>
+        </a>
+      </header>
+      <div class="promo">
+        <h2 class="promo__title">Простые решения непростых задач</h2>
+        <p class="promo__subtitle">Поможем решить любой ваш вопрос в сфере недвижимоcти с гарантией
+качеcтва от «Метро»</p>
+        <button class="promo__btn btn">Бесплатная консультация</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-plus">
+    <div class="inner">
+      <div class="our-plus__box-wrap">
+        <div class="our-plus__box">
+          <div class="our-plus__icon">
+            <svg width="44" height="52">
+              <use xlink:href="img/sprite.svg#icon_client"></use>
+            </svg>
+          </div>
+          <div class="our-plus__descr">Индивидуальный подход к каждому клиенту
+          </div>
+        </div>
+        <div class="our-plus__box">
+          <div class="our-plus__icon">
+            <svg width="38" height="52">
+              <use xlink:href="img/sprite.svg#icon_list"></use>
+            </svg>
+          </div>
+          <div class="our-plus__descr">Надежная база объектов недвижимости</div>
+        </div>
+        <div class="our-plus__box">
+          <div class="our-plus__icon">
+            <svg width="45" height="41">
+              <use xlink:href="img/sprite.svg#icon_group"></use>
+            </svg>
+          </div>
+          <div class="our-plus__descr">Гибкая система комиссионых для всех клиентов</div>
+        </div>
+      </div>
+      <p class="our-plus__text"><span>«Метро»</span> – надежное агентство по оказанию услуг в сфере недвижимости в городе Санкт-Петербург</p>
+    </div>
+  </div>
+
+  <div id="services" class="services">
+    <h2 class="services__title">Услуги компании</h2>
+    <div class="services__box">
+      <div class="card">
+        <div class="card__img">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/image_1-lg.jpg">
+            <img src="img/image_1-sm.jpg" alt="">
+          </picture>
+        </div>
+        <h3 class="card__title">Квартиры на вторичном рынке</h3>
+        <ul class="card__ul">
+          <li class="card__li"><span class="card__text">Полный спектр услуг по покупке и продаже квартир;</span></li>
+          <li class="card__li"><span class="card__text">Сделки любой сложности;</span></li>
+          <li class="card__li"><span class="card__text">Работа с субсидиями, ипотекой и материнским капиталом.</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/image_2-lg.jpg">
+            <img src="img/image_2-sm.jpg" alt="">
+          </picture>
+        </div>
+        <h3 class="card__title">Квартиры в строящихся домах</h3>
+        <ul class="card__ul">
+          <li class="card__li"><span class="card__text">Консультации по приобретению квартир в новых домах;</span></li>
+          <li class="card__li"><span class="card__text">В нашей базе более 60 000 квартир в различных жилых комплексах;</span></li>
+          <li class="card__li"><span class="card__text">Продажа по ценам застройщиков.</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/image_3-lg.jpg">
+            <img src="img/image_3-sm.jpg" alt="">
+          </picture>
+        </div>
+        <h3 class="card__title">Аренда квартир и помещений</h3>
+        <ul class="card__ul">
+          <li class="card__li"><span class="card__text">Подбор актуальных вариантов;</span></li>
+          <li class="card__li"><span class="card__text">Помощь в выгодной сдаче недвижимости;</span></li>
+          <li class="card__li"><span class="card__text">Составление документов для организации сделки.</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/image_4-lg.jpg">
+            <img src="img/image_4-sm.jpg" alt="">
+          </picture>
+        </div>
+        <h3 class="card__title">Регистрация сделок
+  с недвижимостью</h3>
+        <ul class="card__ul">
+          <li class="card__li"><span class="card__text">Подготовка документов;</span></li>
+          <li class="card__li"><span class="card__text">Представление интересов в МФЦ Санкт-Петербурга и ЛО;</span></li>
+          <li class="card__li"><span class="card__text">Регистрация полного пакета документов для всех видов сделок с недвижимостью.</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__img">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/image_5-lg.jpg">
+            <img src="img/image_5-sm.jpg" alt="">
+          </picture>
+        </div>
+        <h3 class="card__title">Помощь в оформлении ипотеки</h3>
+        <ul class="card__ul">
+          <li class="card__li"><span class="card__text">Надежные банки-партнеры;</span></li>
+          <li class="card__li"><span class="card__text">Помощь в подборе и оформлении ипотечного кредита;</span></li>
+          <li class="card__li"><span class="card__text">Сопровождение ипотечной сделки.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="partners" class="partners">
+    <h2 class="partners__title">Наши партнеры</h2>
+    <div class="partners__box">
+      <a href="https://www.deltacredit.ru/" target="_blank" class="partners__link">
+        <div class="partners__icon">
+          <img width="220" height="50" src="img/delta2.png" alt="vtb icon">
+        </div>
+      </a>
+      <a href="https://www.sberbank.ru" target="_blank" class="partners__link">
+        <div class="partners__icon">
+          <img width="140" height="38" src="img/sber2.png" alt="sber bank icon">
+        </div>
+      </a>
+      <a href="https://www.vtb.ru/" target="_blank" class="partners__link">
+        <div class="partners__icon">
+          <img width="98" height="27" src="img/vtb2.png" alt="vtb icon">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="contacts" class="contacts">
+    <div class="inner">
+      <h2 class="contacts__title">Контакты</h2>
+      <div class="contacts__box">
+        <div class="contacts__descr">
+          <h4 class="contacts__subtitle">Телефон</h4>
+          <p class="contacts__text">+7 812 982-56-95</p>
+          <h4 class="contacts__subtitle">Адрес</h4>
+          <p class="contacts__text">СПб, ул. Караванная д.1</p>
+          <a href="#" class="contacts__address-link">Показать на карте</a>
+
+          <h4 class="contacts__subtitle">Почта</h4>
+          <a class="contacts__text" href="mailto:office@anmetro.com">office@anmetro.com</a>
+          <a href="#" class="contacts__social-link">
+            <div class="contacts__social-icon">
+              <svg width="45" height="40">
+                <use xlink:href="img/sprite.svg#icon_vk"></use>
+              </svg>
+            </div>
+          </a>
+
+        </div>
+        <div class="contacts__map-wrap">
+          <div id="map" class="contacts__map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="inner">
+      <p class="copyright__text">© 2019 <span>Агентство недвижимости </span>«Метро»<span>. Все права защищены.</span></p>
+    </div>
+  </div>
+
 
   <script src="js/script.min.js"></script>
 

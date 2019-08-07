@@ -1,5 +1,5 @@
 @import '../../node_modules/normalize.scss/normalize.scss';
-@import 'variables';
+@import 'variables.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/bg.scss';
 @import 'blocks/main-nav.scss';
@@ -13,3 +13,4 @@
 @import 'blocks/inner.scss';
 @import 'blocks/contacts.scss';
 @import 'blocks/copyright.scss';
+@import 'blocks/popup.scss';

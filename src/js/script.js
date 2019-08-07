@@ -30,3 +30,19 @@
     burgerBtn.classList.toggle('burger--close');
   };
 
+  // ОТКРЫТИЕ ПОПАПА
+
+  const btnRequest = document.querySelector('.promo__btn');
+  const popup = document.querySelector('.overlay');
+
+  btnRequest.addEventListener('click', popupToggle);
+
+  function popupToggle () {
+    popup.classList.toggle('overlay--open');
+  };
+
+  // ЗАКРЫТИЕ ПОПАПА
+
+  const btnClose = document.querySelector('.close');
+
+  btnClose.addEventListener('click', popupToggle);
